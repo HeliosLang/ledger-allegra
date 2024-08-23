@@ -1,0 +1,45 @@
+{
+  "name": "@helios-lang/ledger-allegra",
+  "version": "0.1.0",
+  "description": "Cardano ledger types for Allegra era",
+  "type": "module",
+  "main": "src/index.js",
+  "types": "types/index.d.ts",
+  "scripts": {
+    "build": "npm run prettify && npm run build:types",
+    "build:types": "npx tsc -p jsconfig.json --noEmit false --emitDeclarationOnly",
+    "prettify": "npx prettier . --write",
+    "test": "npm run test:pretty && npm run test:types",
+    "test:pretty": "npx prettier . --check",
+    "test:types": "npm run build:types"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HeliosLang/ledger-allegra.git"
+  },
+  "keywords": [
+    "Cardano",
+    "blockchain",
+    "ledger",
+    "smart",
+    "contracts"
+  ],
+  "author": "Christian Schmitz",
+  "license": "BSD-3-Clause",
+  "bugs": {
+    "url": "https://github.com/HeliosLang/ledger-allegra/issues"
+  },
+  "homepage": "https://github.com/HeliosLang/ledger-allegra#readme",
+  "devDependencies": {
+    "@types/node": "^22.5.0",
+    "prettier": "^3.3.3",
+    "typescript": "^5.5.4"
+  },
+  "dependencies": {
+    "@helios-lang/cbor": "^0.1.21",
+    "@helios-lang/codec-utils": "^0.1.32",
+    "@helios-lang/crypto": "^0.1.9",
+    "@helios-lang/ledger-shelley": "^0.1.1",
+    "@helios-lang/uplc": "^0.1.37"
+  }
+}
