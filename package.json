@@ -40,6 +40,6 @@
     "@helios-lang/codec-utils": "^0.1.32",
     "@helios-lang/crypto": "^0.1.9",
     "@helios-lang/ledger-shelley": "^0.1.1",
-    "@helios-lang/uplc": "^0.1.37"
+    "@helios-lang/uplc": "^0.3.0"
   }
 }
