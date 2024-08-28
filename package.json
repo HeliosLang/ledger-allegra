@@ -1,6 +1,6 @@
 {
   "name": "@helios-lang/ledger-allegra",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Cardano ledger types for Allegra era",
   "type": "module",
   "main": "src/index.js",
