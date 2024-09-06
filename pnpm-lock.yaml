@@ -1,0 +1,158 @@
+lockfileVersion: "9.0"
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+  .:
+    dependencies:
+      "@helios-lang/cbor":
+        specifier: ^0.1.21
+        version: 0.1.21
+      "@helios-lang/codec-utils":
+        specifier: ^0.1.32
+        version: 0.1.34
+      "@helios-lang/crypto":
+        specifier: ^0.1.9
+        version: 0.1.14
+      "@helios-lang/ledger-shelley":
+        specifier: ^0.1.3
+        version: 0.1.4
+      "@helios-lang/uplc":
+        specifier: ^0.3.0
+        version: 0.3.0
+    devDependencies:
+      "@types/node":
+        specifier: ^22.5.0
+        version: 22.5.4
+      prettier:
+        specifier: ^3.3.3
+        version: 3.3.3
+      typescript:
+        specifier: ^5.5.4
+        version: 5.5.4
+
+packages:
+  "@helios-lang/cbor@0.1.21":
+    resolution:
+      {
+        integrity: sha512-EHIKmN1fDPtEwjvPHCjCHf3JtCK2j09z6dwTiSI4HJ7sl62nr5Ti1B0/EkiKrahfKQnYl/wgtVyKoY/qgIJQMw==,
+      }
+
+  "@helios-lang/codec-utils@0.1.34":
+    resolution:
+      {
+        integrity: sha512-SDZNVFDRzBN3Z7TyVmYzSa74YAtP2O5sB8hOySkFX0SwjUIDMW3XRjM0pj8EGrMHFrMbWd1MTG+31ysJ30lNkw==,
+      }
+
+  "@helios-lang/compiler-utils@0.1.54":
+    resolution:
+      {
+        integrity: sha512-Yco1TszlczuEfrDuaFRbjSYcNglROJ8vaWI0/LPlUSOM7jdh9/5fRT/jmXGXClCsdUKM7uissb1qHNk/EB2vww==,
+      }
+
+  "@helios-lang/crypto@0.1.14":
+    resolution:
+      {
+        integrity: sha512-86Q+saQoX10RfeAfLXRZt0UTgNmZFREnHnmjGnyKgPYGWNHhVKfn20+k4CDn03Kaa5rIrWh+iN+irsB4+Hv4Mg==,
+      }
+
+  "@helios-lang/era@0.1.2":
+    resolution:
+      {
+        integrity: sha512-zthxic/tg/zpnEHX27n1ij/jGpXNq23B/cJRB3ZuTqbD2+54XzcKbqx2INFgGSZJCYBLiKYpmctKFBn+zrNftw==,
+      }
+
+  "@helios-lang/ledger-shelley@0.1.4":
+    resolution:
+      {
+        integrity: sha512-A86U4pVs7gqAc7Y/Um8EkAc/jEDen3I64hYOkA88wfc28gx360foW1F/bBidA7GM4fSBSwnvm5pn26AhLzHrMw==,
+      }
+
+  "@helios-lang/type-utils@0.1.21":
+    resolution:
+      {
+        integrity: sha512-z12O84kEwVzqYmcYL+SWCaZNIkmF4cDvKFOtL3KiR6pwl8KngqiQk8MnBEyG06FUMKxCSknWayPGIYzM2HcqBw==,
+      }
+
+  "@helios-lang/uplc@0.3.0":
+    resolution:
+      {
+        integrity: sha512-bAS7YUfs1P7fut9cI0fePSh10Qh0QndGn/XqylGqYrChvULGp4srS9wKMSZ+g6Xerub358pqBqp+tCkFi5fQ4w==,
+      }
+
+  "@types/node@22.5.4":
+    resolution:
+      {
+        integrity: sha512-FDuKUJQm/ju9fT/SeX/6+gBzoPzlVCzfzmGkwKvRHQVxi4BntVbyIwf6a4Xn62mrvndLiml6z/UBXIdEVjQLXg==,
+      }
+
+  prettier@3.3.3:
+    resolution:
+      {
+        integrity: sha512-i2tDNA0O5IrMO757lfrdQZCc2jPNDVntV0m/+4whiDfWaTKfMNgR7Qz0NAeGz/nRqF4m5/6CLzbP4/liHt12Ew==,
+      }
+    engines: { node: ">=14" }
+    hasBin: true
+
+  typescript@5.5.4:
+    resolution:
+      {
+        integrity: sha512-Mtq29sKDAEYP7aljRgtPOpTvOfbwRWlS6dPRzwjdE+C0R4brX/GUyhHSecbHMFLNBLcJIPt9nl9yG5TZ1weH+Q==,
+      }
+    engines: { node: ">=14.17" }
+    hasBin: true
+
+  undici-types@6.19.8:
+    resolution:
+      {
+        integrity: sha512-ve2KP6f/JnbPBFyobGHuerC9g1FYGn/F8n1LWTwNxCEzd6IfqTwUQcNXgEtmmQ6DlRrC1hrSrBnCZPokRrDHjw==,
+      }
+
+snapshots:
+  "@helios-lang/cbor@0.1.21":
+    dependencies:
+      "@helios-lang/codec-utils": 0.1.34
+      "@helios-lang/type-utils": 0.1.21
+
+  "@helios-lang/codec-utils@0.1.34": {}
+
+  "@helios-lang/compiler-utils@0.1.54":
+    dependencies:
+      "@helios-lang/codec-utils": 0.1.34
+      "@helios-lang/type-utils": 0.1.21
+
+  "@helios-lang/crypto@0.1.14":
+    dependencies:
+      "@helios-lang/codec-utils": 0.1.34
+
+  "@helios-lang/era@0.1.2": {}
+
+  "@helios-lang/ledger-shelley@0.1.4":
+    dependencies:
+      "@helios-lang/cbor": 0.1.21
+      "@helios-lang/codec-utils": 0.1.34
+      "@helios-lang/type-utils": 0.1.21
+      "@helios-lang/uplc": 0.3.0
+
+  "@helios-lang/type-utils@0.1.21": {}
+
+  "@helios-lang/uplc@0.3.0":
+    dependencies:
+      "@helios-lang/cbor": 0.1.21
+      "@helios-lang/codec-utils": 0.1.34
+      "@helios-lang/compiler-utils": 0.1.54
+      "@helios-lang/crypto": 0.1.14
+      "@helios-lang/era": 0.1.2
+      "@helios-lang/type-utils": 0.1.21
+
+  "@types/node@22.5.4":
+    dependencies:
+      undici-types: 6.19.8
+
+  prettier@3.3.3: {}
+
+  typescript@5.5.4: {}
+
+  undici-types@6.19.8: {}
